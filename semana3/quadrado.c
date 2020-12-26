@@ -7,9 +7,15 @@ int main()
 
   scanf("%f", &x);
 
+  if (x <= 0)
+  {
+    printf("Numero invalido");
+    return 0;
+  }
+
   for (int i = 1; i <= x; i++)
   {
-    printf("O quadrado de %d eh %.2f\n", i, powf((float)i, 2));
+    printf("O quadrado de %d eh %.0f\n", i, powf((float)i, 2));
   }
 
   return 0;

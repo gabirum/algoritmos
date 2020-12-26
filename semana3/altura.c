@@ -7,7 +7,8 @@ int calcular(float alturaDoMaior, float alturaDoMenor, float taxaDoMaior, float 
 
   int i = 0;
 
-  for (; alt1 <= alt0; i++) {
+  for (; alt1 <= alt0; i++)
+  {
     alt0 += taxaDoMaior;
     alt1 += taxaDoMenor;
   }

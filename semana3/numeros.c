@@ -23,7 +23,7 @@ int main(int argc, char const *argv[])
   }
   else
   {
-    printf("%.2f", (float) sum / (float) first);
+    printf("%.2f", (float)sum / (float)first);
   }
 
   return 0;

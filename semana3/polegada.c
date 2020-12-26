@@ -6,10 +6,15 @@ int main(int argc, char const *argv[])
 
   scanf("%d", &x);
 
-  for (int i = 0; i <= x; i++)
+  if (x <= 0)
   {
-    printf("%d centimetro = %.2f polegadas\n", i, i / 2.54);
+    return 0;
   }
-  
+
+  for (int i = 1; i <= x; i++)
+  {
+    printf("%d centimetros = %.2f polegadas\n", i, i / 2.54);
+  }
+
   return 0;
 }
