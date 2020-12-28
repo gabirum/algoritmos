@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int mdc(int x, int y);
-int mmc(int x, int y);
 
 int mdc(int x, int y)
 {
