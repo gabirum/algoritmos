@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
   scanf("%d %d", &x, &y);
   int count = 0;
 
-  if (x > y && x <= 0)
+  if (x > y || x <= 0)
   {
     printf("Intervalo invalido");
     return 0;
@@ -31,6 +31,8 @@ int main(int argc, char const *argv[])
       printf("%d\n", i);
     }
   }
+
+  printf("TOTAL: %d", count);
 
   return 0;
 }
