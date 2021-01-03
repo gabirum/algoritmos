@@ -8,6 +8,11 @@ int main(int argc, char const *argv[])
 
     scanf("%d", &idade);
 
+    if (idade < 0) {
+      printf("idade invalida");
+      continue;
+    }
+
     if (idade >= 18)
     {
       printf("maior de idade\n");
