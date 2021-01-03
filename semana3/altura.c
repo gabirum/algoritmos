@@ -34,17 +34,23 @@ int main(int argc, char const *argv[])
 
   if (altura0 > altura1)
   {
-    if (taxa1 < taxa0) {
+    if (taxa1 < taxa0)
+    {
       printf("dados invalidos");
-    } else {
+    }
+    else
+    {
       printf("%d", calcular(altura0, altura1, taxa0, taxa1));
     }
   }
   else
   {
-    if (taxa0 < taxa1) {
+    if (taxa0 < taxa1)
+    {
       printf("dados invalidos");
-    } else {
+    }
+    else
+    {
       printf("%d", calcular(altura1, altura0, taxa1, taxa0));
     }
   }
