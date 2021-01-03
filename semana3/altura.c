@@ -31,15 +31,21 @@ int main(int argc, char const *argv[])
     printf("Valores invalidos");
     return 0;
   }
-  else
+
+  if (altura0 > altura1)
   {
-    if (altura0 > altura1)
-    {
+    if (taxa1 < taxa0) {
+      printf("Valores invalidos");
+    } else {
       printf("%d", calcular(altura0, altura1, taxa0, taxa1));
     }
-    else
-    {
-      printf("%d", calcular(altura1, altura0, taxa1, taxa0));
+  }
+  else
+  {
+    if (taxa0 < taxa1) {
+      printf("Valores invalidos");
+    } else {
+      printf("%d", calcular(altura0, altura1, taxa0, taxa1));
     }
   }
 

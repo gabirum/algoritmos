@@ -6,6 +6,13 @@ int main(int argc, char const *argv[])
   int y = 0;
 
   scanf("%d %d", &x, &y);
+  int count = 0;
+
+  if (x > y && x <= 0)
+  {
+    printf("Intervalo invalido");
+    return 0;
+  }
 
   for (int i = x; i <= y; i++)
   {
@@ -20,6 +27,7 @@ int main(int argc, char const *argv[])
 
     if (i == sum)
     {
+      count++;
       printf("%d\n", i);
     }
   }
