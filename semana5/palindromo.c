@@ -34,9 +34,9 @@ int main(int argc, char const *argv[])
 
   scanf("%[^\n]%*c", text);
 
-  int length = count(text);
-  int it = length / 2;
   char *trimmedText = trim(text);
+  int length = count(trimmedText);
+  int it = length / 2;
 
   for (int i = 0; i < it; i++)
   {
