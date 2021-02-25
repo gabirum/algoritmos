@@ -21,7 +21,7 @@ char *trim(const char *text)
     if (!isspace(text[i]))
     {
       trimmedText = realloc(trimmedText, (sizeof(char) * (++trimCount)));
-      trimmedText[trimCount - 1] = text[i];
+      trimmedText[trimCount - 1] = toupper(text[i]);
     }
   }
 
