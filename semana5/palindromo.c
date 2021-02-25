@@ -42,12 +42,12 @@ int main(int argc, char const *argv[])
   {
     if (trimmedText[i] != trimmedText[(length - 1) - i])
     {
-      printf("nao e palíndromo\n");
+      printf("Nao eh palindromo\n");
       return 0;
     }
   }
 
-  printf("e palindromo\n");
+  printf("Eh palindromo\n");
 
   return 0;
 }

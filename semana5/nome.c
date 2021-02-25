@@ -12,7 +12,8 @@ int main(int argc, char const *argv[])
     if (isspace(name[i]))
       continue;
 
-    if (i > 0) {
+    if (i > 0)
+    {
       if (isspace(name[i - 1]))
         printf("%c", name[i]);
     }
