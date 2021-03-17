@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 
   for (int i = 0; i < NUMBER_OF_PEOPLE; i++)
     if (verifyCPF(people[i].cpf))
-      printf("%s %d %s\n", people[i].name, people[i].age, people[i].cpf);
+      printf("%s - %d - %s\n", people[i].name, people[i].age, people[i].cpf);
 
   return 0;
 }

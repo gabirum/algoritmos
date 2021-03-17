@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define PEOPLE 1
+#define PEOPLE 10
 
 typedef struct contact
 {
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
   sort(contacts);
 
   for (int i = 0; i < PEOPLE; i++)
-    printf("%s %s %s %s", contacts[i].name, contacts[i].address, contacts[i].email, contacts[i].telephone);
+    printf("%s - %s - %s - %s\n", contacts[i].name, contacts[i].address, contacts[i].email, contacts[i].telephone);
 
   return 0;
 }
