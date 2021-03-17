@@ -24,10 +24,10 @@ int main(int argc, char const *argv[])
 
   for (int i = 0; i < NUMBER_OF_USERS; i++)
   {
-    if (strcmp(name, users[i].name) == 0 && strcmp(password, users[i].password))
+    if (strcmp(name, users[i].name) == 0 && strcmp(password, users[i].password) == 0)
     {
-      printf("%d\n", users[i].id);
-      break;
+      printf("ID:%d\n", users[i].id);
+      return 0;
     }
   }
 
