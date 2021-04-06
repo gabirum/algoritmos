@@ -23,7 +23,7 @@ PersonData loadFromFile()
 
   if (personFile == NULL || telephoneFile == NULL || emailFile == NULL)
   {
-    printf("O arquivo não existe, ele será criado no final da execução do programa\n\n");
+    printf("Os arquivos não existem, eles serão criados no final da execução\n\n");
   }
   else
   {
