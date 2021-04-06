@@ -38,7 +38,8 @@ int main(int argc, char const *argv[])
     {
       char name[55];
       printf("Digite o nome da pessoa:\n");
-      scanf("%s", name);
+      scanf("%*c");
+      scanf("%[^\n]", name);
 
       addPerson(&data, name);
       break;
@@ -51,7 +52,8 @@ int main(int argc, char const *argv[])
       printf("Digite o id da pessoa a qual deseja atribuir este telefone:\n");
       scanf("%d", &tel.personId);
       printf("Digite o telefone:\n");
-      scanf("%s", tel.telephone);
+      scanf("%*c");
+      scanf("%[^\n]", tel.telephone);
 
       addTelephone(&data, &tel);
       break;
@@ -64,7 +66,8 @@ int main(int argc, char const *argv[])
       printf("Digite o id da pessoa a qual deseja atribuir este email:\n");
       scanf("%d", &email.personId);
       printf("Digite o email:\n");
-      scanf("%s", email.email);
+      scanf("%*c");
+      scanf("%[^\n]", email.email);
 
       addEmail(&data, &email);
       break;
@@ -77,7 +80,8 @@ int main(int argc, char const *argv[])
       printf("Digite o id da pessoa a alterar:\n");
       scanf("%d", &person.id);
       printf("Digite o nome da pessoa, deixe vazio caso não queira alterar:\n");
-      scanf("%s", person.name);
+      scanf("%*c");
+      scanf("%[^\n]", person.name);
 
       editPerson(&data, &person);
       break;
@@ -91,7 +95,8 @@ int main(int argc, char const *argv[])
       printf("Digite o id da pessoa, caso queira atribuir a outra pessoa este telefone, senão digite -1:\n");
       scanf("%d", &t.personId);
       printf("Digite o telefone:\n");
-      scanf("%s", t.telephone);
+      scanf("%*c");
+      scanf("%[^\n]", t.telephone);
 
       editTelephone(&data, &t);
       break;
@@ -105,7 +110,8 @@ int main(int argc, char const *argv[])
       printf("Digite o id da pessoa, caso queira atribuir a outra pessoa este email, senão digite -1:\n");
       scanf("%d", &e.personId);
       printf("Digite o email:\n");
-      scanf("%s", e.email);
+      scanf("%*c");
+      scanf("%[^\n]", e.email);
 
       editEmail(&data, &e);
       break;
